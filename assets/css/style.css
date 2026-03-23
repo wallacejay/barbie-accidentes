@@ -132,7 +132,7 @@ img {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/hero-bg.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/hero-bg.png');
     background-size: cover;
     background-position: center;
     padding: 100px 0 60px;
@@ -188,7 +188,8 @@ img {
 
 .hero-benefits li {
     padding: 8px 0;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
+    font-weight: bold;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -279,8 +280,8 @@ img {
 }
 
 .btn-large {
-    padding: 18px 35px;
-    font-size: 1.1rem;
+    padding: 20px 38px;
+    font-size: 1.2rem;
 }
 
 /* ========================================
@@ -316,6 +317,28 @@ section {
 
 .pasos .section-title {
     color: var(--dark-bg);
+}
+
+.pasos-video {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.pasos-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pasos-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
 }
 
 .pasos-grid {
@@ -1046,8 +1069,38 @@ section {
         grid-template-columns: repeat(4, 1fr);
     }
 
+    .pasos-video {
+        max-width: 350px;
+    }
+
     .section-title {
         font-size: 2.5rem;
+    }
+
+    .pasos-content {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .pasos-video {
+        flex: 0 0 350px;
+        max-width: 350px;
+        margin: 0;
+    }
+
+    .pasos-grid {
+        flex: 1;
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .pasos-cta {
+        text-align: center;
+        max-width: 100%;
+        padding-left: 0;
+        margin-top: 10px;
     }
 
     .servicio-intro {
