@@ -236,6 +236,7 @@ img {
     height: auto;
     display: block;
     border-radius: 15px;
+    aspect-ratio: 9 / 16;
 }
 
 /* ========================================
@@ -339,6 +340,7 @@ section {
     height: auto;
     display: block;
     border-radius: 15px;
+    aspect-ratio: 9 / 16;
 }
 
 .pasos-grid {
@@ -473,6 +475,7 @@ section {
     height: auto;
     display: block;
     border-radius: 15px;
+    aspect-ratio: 9 / 16;
 }
 
 /* ========================================
@@ -495,6 +498,7 @@ section {
 .testimonios-video .video-responsive {
     width: 80%;
     margin: 0 auto;
+    aspect-ratio: 9 / 16;
 }
 
 .testimonios-cta {
